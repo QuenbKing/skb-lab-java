@@ -1,4 +1,4 @@
-package ru.nKarskanov.skb.entity;
+package ru.nkarskanov.skb.entity;
 
 public interface Transport {
     void move();

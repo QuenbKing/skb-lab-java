@@ -1,4 +1,4 @@
-package ru.nKarskanov.skb;
+package ru.nkarskanov.skb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

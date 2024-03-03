@@ -1,11 +1,11 @@
-package ru.nKarskanov.skb.service;
+package ru.nkarskanov.skb.service;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
-import ru.nKarskanov.skb.entity.Transport;
+import ru.nkarskanov.skb.entity.Transport;
 
 @Log4j2
 @Service
@@ -24,13 +24,13 @@ public class ServiceWithConstructorInjection {
         log.info("ConstructService is destroying");
     }
 
-    public void transportMove() {
+    public void moveTransport() {
         car.move();
         boat.move();
     }
 
-    public void transportStop() {
+    public void stopTransport() {
         car.stop();
-        car.move();
+        car.stop();
     }
 }
