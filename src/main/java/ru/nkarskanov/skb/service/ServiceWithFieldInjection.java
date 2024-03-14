@@ -32,6 +32,6 @@ public class ServiceWithFieldInjection {
 
     public void stopTransport() {
         car.stop();
-        car.stop();
+        boat.stop();
     }
 }

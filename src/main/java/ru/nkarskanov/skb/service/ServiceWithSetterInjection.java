@@ -40,6 +40,6 @@ public class ServiceWithSetterInjection {
 
     public void stopTransport() {
         car.stop();
-        car.stop();
+        boat.stop();
     }
 }
