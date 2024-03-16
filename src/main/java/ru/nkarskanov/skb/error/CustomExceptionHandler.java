@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class CustomExceptionHandler {
     @ExceptionHandler(MyException.class)
-    public ResponseEntity<MyException> getBadGatewayException(MyException ex) {
-        return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body(ex);
+    public ResponseEntity<String> getBadGatewayException(MyException ex) {
+        return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body(ex.getLocalizedMessage());
     }
 }
